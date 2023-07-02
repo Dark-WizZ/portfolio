@@ -1,0 +1,17 @@
+.App{
+  .intro{
+    background-image: url('./images/purpleFG.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+
+    p{
+      opacity:1;
+    }
+  }
+  .skills{
+    
+  }
+}
