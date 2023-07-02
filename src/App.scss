@@ -1,3 +1,5 @@
+$secPurple: rgb(205, 95, 248);
+
 .App{
   .intro{
     background-image: url('./images/purpleFG.png');
@@ -5,13 +7,24 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
+    grid-template-columns: 50% 50%;
     place-items: center;
-
+    
     p{
-      opacity:1;
+      font-size: 48px;
+      font-weight: 900;
+      
+      span{
+        font-family: 'eina01-bold';
+        color: $secPurple;
+      }
+
+    }
+    img{
+      width: 100%
     }
   }
   .skills{
-    
+    min-height: 3000px;
   }
 }
