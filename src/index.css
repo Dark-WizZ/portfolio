@@ -16,13 +16,20 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #000;
   color:white;
-  /* overflow: hidden; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* bg-animation{
+  z-index: -1;
+  min-height: 100vh;
+  max-height: 110vh;
+  overflow: hidden;
+  position: relative;
+} */
 
 p{
   margin:0;

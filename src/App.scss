@@ -1,14 +1,24 @@
 $secPurple: rgb(205, 95, 248);
 
 .App{
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+
+  &>*{
+    min-height:100vh;
+    scroll-snap-align: start;
+  }
+  
   .intro{
     background-image: url('./images/purpleFG.png');
-    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 400px));
     place-items: center;
+    justify-content: space-evenly;
     
     p{
       font-size: 48px;
@@ -25,6 +35,5 @@ $secPurple: rgb(205, 95, 248);
     }
   }
   .skills{
-    min-height: 3000px;
   }
 }

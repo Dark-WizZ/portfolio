@@ -9,7 +9,7 @@ $star4: $accent;
 
 #stars {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -23,7 +23,7 @@ $star4: $accent;
 #stars:after {
   z-index: -1;
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 100vh;
   width: 1px;
   height: 1px;
@@ -33,7 +33,7 @@ $star4: $accent;
 
 #stars2 {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -47,7 +47,7 @@ $star4: $accent;
 #stars2:after {
   z-index: -1;
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 100vh;
   width: 2px;
   height: 2px;
@@ -57,7 +57,7 @@ $star4: $accent;
 
 #stars3 {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   width: 3px;
   height: 3px;
   background: transparent;
@@ -71,7 +71,7 @@ $star4: $accent;
 #stars3:after {
   z-index: -1;
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 100vh;
   width: 3px;
   height: 3px;
@@ -81,7 +81,7 @@ $star4: $accent;
 
 #stars4 {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -95,7 +95,7 @@ $star4: $accent;
 #stars4:after {
   z-index: -1;
   content: " ";
-  position: absolute;
+  position: fixed;
   top: 100vh;
   width: 1px;
   height: 1px;
