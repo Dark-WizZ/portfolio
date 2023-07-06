@@ -8,30 +8,41 @@ import react from '../icons/react.svg'
 import firebase from '../icons/firebase.svg'
 
 function Skills() {
-  return ( <div className="skills">
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
-    </div>
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
-    </div>
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
-    </div>
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
-    </div>
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
-    </div>
-    <div className="skill">
-      <img src="" alt="" />
-      <div className="title"></div>
+  return (<div className="skills">
+    <header>SKILLS <span>& TOOLS</span></header>
+     <div className="items">
+      <div className="skill">
+        <img src={html} alt="" />
+        <div className="title">HTML</div>
+      </div>
+      <div className="skill">
+        <img src={css} alt="" />
+        <div className="title">CSS</div>
+      </div>
+      <div className="skill">
+        <img src={js} alt="" />
+        <div className="title">JavaScript</div>
+      </div>
+      <div className="skill">
+        <img src={webpack} alt="" />
+        <div className="title">WebPack</div>
+      </div>
+      <div className="skill">
+        <img src={git} alt="" />
+        <div className="title">GIT</div>
+      </div>
+      <div className="skill">
+        <img src={npm} alt="" />
+        <div className="title">NPM</div>
+      </div>
+      <div className="skill">
+        <img src={react} alt="" />
+        <div className="title">React</div>
+      </div>
+      <div className="skill">
+        <img src={firebase} alt="" />
+        <div className="title">FireBase</div>
+      </div>
     </div>
   </div> );
 }

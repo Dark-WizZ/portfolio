@@ -23,15 +23,11 @@ code {
     monospace;
 }
 
-/* bg-animation{
-  z-index: -1;
-  min-height: 100vh;
-  max-height: 110vh;
-  overflow: hidden;
-  position: relative;
-} */
-
 p{
   margin:0;
   padding:0;
+}
+
+*{
+  box-sizing: border-box;
 }

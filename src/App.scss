@@ -21,7 +21,7 @@ $secPurple: rgb(205, 95, 248);
     justify-content: space-evenly;
     
     p{
-      font-size: 48px;
+      font-size: 2.5rem;
       font-weight: 900;
       
       span{
@@ -35,5 +35,26 @@ $secPurple: rgb(205, 95, 248);
     }
   }
   .skills{
+    padding: 3rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    header{
+      font-family: 'eina01-bold';
+      justify-self: center;
+      font-size: 2rem;
+      span{
+        color:$secPurple;
+      }
+    }
+    .items{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      justify-content: space-evenly;
+      place-items: center;
+      .skill{
+        display: grid;
+        place-items: center;
+      }
+    }
   }
 }
