@@ -1,10 +1,13 @@
 import ProjectCard from "./ProjectCard";
+import projects from "../data/projects";
 
 function Projects() {
   return ( <div className="projects">
-    <header>PROJECTS</header>
+    <header>MY <span>PROJECTS</span></header>
     <div className="items">
-      <ProjectCard />
+      {projects.map((p,i) => {
+        return <ProjectCard project={p} key={i} />
+      })}
     </div>
   </div> );
 }
