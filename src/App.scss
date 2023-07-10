@@ -1,14 +1,41 @@
 $secPurple: #cd5ff8;
 
+@mixin mobile{
+  @media (max-width: 768px){
+    @content;
+  }
+}
+
 .App{
   scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 
-  &>*{
+  &>*:not(.footer){
     min-height:100vh;
     scroll-snap-align: start;
+  }
+  .footer{
+    scroll-snap-align: end;
+    background-color: #d165fbb2;
+    display:grid;
+    justify-content: center;
+    place-items: center;
+    
+    &>*{
+      padding-bottom: 0.5em;
+    }
+    .links{
+      display: flex;
+      gap:1.1em;
+      img{
+        background-color: #fff;
+        height: 1.5em;
+        border-radius: 0.3em;
+        box-shadow: 0 0 10px 0 black;
+      }
+    }
   }
   
   .intro{
@@ -19,6 +46,7 @@ $secPurple: #cd5ff8;
     grid-template-columns: repeat(auto-fit, minmax(40%, 400px));
     place-items: center;
     justify-content: space-evenly;
+    place-content: center;
     
     p{
       font-size: 2.5rem;
@@ -71,6 +99,9 @@ $secPurple: #cd5ff8;
       }
     }
     .items{
+      display: grid;
+      gap:1rem;
+
       .project_card{
         background-color: #cd5ff81c;
         border-radius: 20px;
@@ -106,6 +137,7 @@ $secPurple: #cd5ff8;
                 display: flex;
                 place-items: center;
                 gap:1ch;
+                cursor: pointer;
                 
                 &.live{
                   display: flex;
