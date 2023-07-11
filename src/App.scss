@@ -47,7 +47,18 @@ $secPurple: #cd5ff8;
     place-items: center;
     justify-content: space-evenly;
     place-content: center;
-    
+
+    @include mobile{
+      .text{
+        display:grid;
+        place-items: center;
+
+        .name{
+          display:grid;
+          place-items: center;
+        }
+      }
+    }
     p{
       font-size: 2.5rem;
       font-weight: 900;
@@ -79,6 +90,10 @@ $secPurple: #cd5ff8;
       grid-template-columns: repeat(4, 1fr);
       justify-content: space-evenly;
       place-items: center;
+
+      @include mobile{
+        grid-template-columns: repeat(2, 1fr);
+      }
       .skill{
         display: grid;
         place-items: center;
@@ -91,6 +106,10 @@ $secPurple: #cd5ff8;
     justify-items: center;
     padding: 3rem;
     gap:1rem;
+
+    @include mobile{
+      padding: 0.8rem;
+    }
     header{
       font-size: 2rem;
       font-family: 'eina01-bold';
@@ -109,8 +128,16 @@ $secPurple: #cd5ff8;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         
+        @include mobile{
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr;
+        }
         &>*{
           padding:2rem;
+
+          @include mobile{
+            padding: 1rem;
+          }
         }
         .details{
           display:flex;
@@ -176,6 +203,16 @@ $secPurple: #cd5ff8;
             width: 45vw;
             object-fit: contain;
             border: 2px solid white;
+
+            @include mobile{
+              width: 100%;
+              border-radius: 5px;
+              border: 1px solid white;
+            }
+          }
+
+          @include mobile{
+            grid-row-start: 1;
           }
         }
       }
